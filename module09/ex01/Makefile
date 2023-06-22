@@ -1,10 +1,10 @@
-NAME 		= PmergeMe
-SRC_FILE 	= main.cpp PmergeMe.cpp
+NAME 		= RPN
+SRC_FILE 	= main.cpp RPN.cpp
 
 OBJ_FILE	= $(SRC_FILE:.cpp=.o)
 CC			=  c++
-CFLAG		=  -std=c++11#-Wall -Wextra -Werror
-HEADERS		= PmergeMe.hpp
+CFLAG		= -Wall -Wextra -Werror -std=c++98
+HEADERS		= RPN.hpp
 RM			= rm -f
 
 all 	: $(NAME)

@@ -3,15 +3,15 @@
 #include <sstream>
 #include <string>
 #include <vector>
-// #define MAX_DATA 99999
-// #define MAX_INT 2147483647
+#define MAX_DATA 99999
+#define MAX_INT 2147483647
 class RPN
 {
 private:
     std::string _argument;
     std::vector<std::string> _data;
     int _rpn;
-public:
+public: 
     ~RPN();
     RPN();
     RPN(std::string arg);

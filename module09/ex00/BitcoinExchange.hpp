@@ -9,6 +9,7 @@ class BitcoinExchange
 {
 private:
     std::map<std::string, Bitcoin> _mapscv;
+
 public:
     ~BitcoinExchange();
     BitcoinExchange();
@@ -16,7 +17,7 @@ public:
     std::map<std::string, Bitcoin> &getMap();
     void setMap(std::map<std::string, Bitcoin> &mp);
     int read_and_parsFILE_SCV(std::string path);
-    float find(Bitcoin &bitc);
+    float findBitcoin(Bitcoin &bitc);
     int initialization(std::string path);
 };
 
@@ -45,5 +46,3 @@ public:
     bool operator<(Bitcoin &other);
     Bitcoin operator=(Bitcoin &other);
 };
-int to_int(std::string str);
-int number_of_daysin_month(int month, int year);
